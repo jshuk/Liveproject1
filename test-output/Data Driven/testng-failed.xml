@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="listeners.customlistener"/>
+  </listeners>
+  <test name="LoginTest">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- LoginTest -->
+  <test name="AddCust">
+    <classes>
+      <class name="testcases.AddCustTest"/>
+    </classes>
+  </test> <!-- AddCust -->
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="testcases.AddCustTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.AddCustTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="loginasBanker"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test name="AddCust(failed)">
+    <classes>
+      <class name="testcases.AddCustTest">
+        <methods>
+          <include name="addcustomer" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.AddCustTest -->
+    </classes>
+  </test> <!-- AddCust(failed) -->
+</suite> <!-- Failed suite [Data Driven] -->
