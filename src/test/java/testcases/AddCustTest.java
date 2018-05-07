@@ -11,11 +11,13 @@ import base.TestBase;
 public class AddCustTest extends TestBase{
 	@Test(dataProvider="getData")
 	public void addcustomer(String firstname,String lastname,String postcode) throws InterruptedException {
-		driver.findElement(By.cssSelector(OR.getProperty("addCustBtn"))).click();
-		driver.findElement(By.cssSelector(OR.getProperty("firstname"))).sendKeys(firstname);
-		driver.findElement(By.cssSelector(OR.getProperty("lastname"))).sendKeys(lastname);
-		driver.findElement(By.cssSelector(OR.getProperty("postcode"))).sendKeys(postcode);
-		driver.findElement(By.cssSelector(OR.getProperty("addbtn"))).click();
+		click("addCustBtn");
+		type("firstname",firstname);
+		type("lastname",lastname);
+		type("postcode",postcode);
+		type("firstname",firstname);
+		click("addbtn");
+		
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 		Reporter.log("second test pass");

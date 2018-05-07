@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.ExcelReader;
 import utilities.ExtentManager;
@@ -89,6 +90,15 @@ public class TestBase {
 			catch(NoSuchElementException e){
 			return false;
 			}
+		}
+		
+		public void click(String locator) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "clicking on :" + locator);
+		}
+		public void type(String locator,String value) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing on :" + locator);
 		}
 	
    @AfterSuite

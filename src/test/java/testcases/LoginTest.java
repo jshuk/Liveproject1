@@ -10,7 +10,7 @@ import base.TestBase;
 public class LoginTest extends TestBase{
 @Test
 	public void loginasBanker() throws InterruptedException {
-		driver.findElement(By.cssSelector(OR.getProperty("bmlBtn"))).click();
+		click("bmlBtn");
 		Assert.assertTrue(IsElementPresent(By.cssSelector(OR.getProperty("addCustBtn"))));
 		Thread.sleep(1000);
 		Reporter.log("fist test pass");

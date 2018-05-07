@@ -8,12 +8,12 @@
       <![CDATA[second test pass]]>
     </line>
   </reporter-output>
-  <suite name="Data Driven" duration-ms="6534" started-at="2018-05-06T14:30:15Z" finished-at="2018-05-06T14:30:22Z">
+  <suite name="Data Driven" duration-ms="14867" started-at="2018-05-07T14:37:49Z" finished-at="2018-05-07T14:38:04Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="2194" started-at="2018-05-06T14:30:15Z" finished-at="2018-05-06T14:30:17Z">
+    <test name="LoginTest" duration-ms="4962" started-at="2018-05-07T14:37:49Z" finished-at="2018-05-07T14:37:54Z">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="loginasBanker()[pri:0, instance:testcases.LoginTest@139982de]" name="loginasBanker" duration-ms="1764" started-at="2018-05-06T20:00:15Z" finished-at="2018-05-06T20:00:17Z">
+        <test-method status="PASS" signature="loginasBanker()[pri:0, instance:testcases.LoginTest@139982de]" name="loginasBanker" duration-ms="1730" started-at="2018-05-07T20:07:49Z" finished-at="2018-05-07T20:07:51Z">
           <reporter-output>
             <line>
               <![CDATA[fist test pass]]>
@@ -22,13 +22,13 @@
         </test-method> <!-- loginasBanker -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- LoginTest -->
-    <test name="AddCust" duration-ms="4288" started-at="2018-05-06T14:30:17Z" finished-at="2018-05-06T14:30:22Z">
+    <test name="AddCust" duration-ms="9202" started-at="2018-05-07T14:37:55Z" finished-at="2018-05-07T14:38:04Z">
       <class name="testcases.AddCustTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustTest@1a677343]" name="setUp" is-config="true" duration-ms="25315" started-at="2018-05-06T19:59:50Z" finished-at="2018-05-06T20:00:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustTest@1a677343]" name="setUp" is-config="true" duration-ms="70948" started-at="2018-05-07T20:06:38Z" finished-at="2018-05-07T20:07:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addcustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustTest@1a677343]" name="addcustomer" duration-ms="4135" started-at="2018-05-06T20:00:17Z" data-provider="getData" finished-at="2018-05-06T20:00:22Z">
+        <test-method status="PASS" signature="addcustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustTest@1a677343]" name="addcustomer" duration-ms="8143" started-at="2018-05-07T20:07:56Z" data-provider="getData" finished-at="2018-05-07T20:08:04Z">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addcustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustTest@1a677343]" name="tearDown" is-config="true" duration-ms="784" started-at="2018-05-06T20:00:22Z" finished-at="2018-05-06T20:00:23Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustTest@1a677343]" name="tearDown" is-config="true" duration-ms="891" started-at="2018-05-07T20:08:04Z" finished-at="2018-05-07T20:08:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
