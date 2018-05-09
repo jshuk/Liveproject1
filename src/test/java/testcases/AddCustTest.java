@@ -7,9 +7,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
+import utilities.TestUtil;
 
 public class AddCustTest extends TestBase{
-	@Test(dataProvider="getData")
+	@Test(dataProviderClass=TestUtil.class,dataProvider="dp")
 	public void addcustomer(String firstname,String lastname,String postcode) throws InterruptedException {
 		click("addCustBtn");
 		type("firstname",firstname);
@@ -24,19 +25,6 @@ public class AddCustTest extends TestBase{
 		
 		
 	}
-	@DataProvider
-	public Object[][] getData(){
-		String sheetName="AddCustTest";
-		int rows = excel.getRowCount(sheetName);
-		int cols =excel.getColumnCount(sheetName);
-		Object[][] data=new Object[rows-1][cols];
-		for(int rowNum=2;rowNum<=rows;rowNum++) {
-			for(int colNum=0;colNum<cols;colNum++) {
-				data[rowNum-2][colNum]=excel.getCellData(sheetName, colNum, rowNum);
-			}
-		}
-		return data;
-		
-	}
+	
 
 }

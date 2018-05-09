@@ -16,4 +16,15 @@
       <class name="testcases.AddCustTest"/>
     </classes>
   </test> <!-- AddCust -->
+  <test name="AddCust(failed)">
+    <classes>
+      <class name="testcases.AddCustTest">
+        <methods>
+          <include name="addcustomer"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.AddCustTest -->
+    </classes>
+  </test> <!-- AddCust(failed) -->
 </suite> <!-- Failed suite [Data Driven] -->

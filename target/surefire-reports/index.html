@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Data_Driven">
-              <span class="suite-name border-passed">Data Driven</span>
+              <span class="suite-name border-skipped">Data Driven</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Data_Driven" class="hide-methods skipped suite-Data_Driven"> (hide)</a> <!-- hide-methods skipped suite-Data_Driven -->
+                      <a href="#" panel-name="suite-Data_Driven" class="show-methods skipped suite-Data_Driven"> (show)</a> <!-- show-methods skipped suite-Data_Driven -->
+                    </span>
+                    <div class="method-list-content skipped suite-Data_Driven">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven" title="testcases.AddCustTest" hash-for-method="addcustomer">addcustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Data_Driven -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +114,6 @@
                       <a href="#" panel-name="suite-Data_Driven" class="show-methods passed suite-Data_Driven"> (show)</a> <!-- show-methods passed suite-Data_Driven -->
                     </span>
                     <div class="method-list-content passed suite-Data_Driven">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven" title="testcases.AddCustTest" hash-for-method="addcustomer(jaya, shukla, 412308.0)">addcustomer(jaya, shukla, 412308.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Data_Driven" title="testcases.LoginTest" hash-for-method="loginasBanker">loginasBanker</a> <!-- method navigator-link -->
@@ -122,22 +131,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Data_Driven" class="panel Data_Driven">
-          <div class="suite-Data_Driven-class-passed">
+          <div class="suite-Data_Driven-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">testcases.AddCustTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addcustomer(jaya, shukla, 412308.0)">
-                  </a> <!-- addcustomer(jaya, shukla, 412308.0) -->
+                  <a name="addcustomer">
+                  </a> <!-- addcustomer -->
                   <span class="method-name">addcustomer</span>
-                  <span class="parameters">(jaya, shukla, 412308.0)</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Can&apos;t invoke method public java.lang.Object[][] utilities.TestUtil.getData(java.lang.reflect.Method) on this instance of class testcases.AddCustTest due to class mismatch
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Data_Driven-class-passed -->
+          </div> <!-- suite-Data_Driven-class-skipped -->
           <div class="suite-Data_Driven-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -220,18 +231,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addcustomer')
-data.setCell(0, 2, 'testcases.AddCustTest')
-data.setCell(0, 3, 8143);
+data.setCell(0, 1, 'loginasBanker')
+data.setCell(0, 2, 'testcases.LoginTest')
+data.setCell(0, 3, 20469);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginasBanker')
-data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 1730);
+data.setCell(1, 1, 'addcustomer')
+data.setCell(1, 2, 'testcases.AddCustTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['Data_Driven']= { tableData: data, tableDiv: 'times-div-Data_Driven'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Data_Driven">
               </div> <!-- times-div-Data_Driven -->
             </div> <!-- times-div -->
@@ -246,12 +257,6 @@ return data;
               <span class="reporter-method-name">loginasBanker</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">fist test pass</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">addcustomer(jaya, shukla, 412308.0)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">second test pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -279,18 +284,14 @@ return data;
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginasBanker</span>
-                <span class="method-start">70974 ms</span>
+                <span class="method-start">82223 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.AddCustTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">addcustomer(jaya, shukla, 412308.0)</span>
-                <span class="method-start">77374 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85840 ms</span>
+                <span class="method-start">108287 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

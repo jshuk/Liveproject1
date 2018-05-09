@@ -4,6 +4,7 @@ testcases\LoginTest.class
 testcases\AddCustTest.class
 utilities\ExtentManager.class
 rough\TestTimeStamp.class
+base\hhh.class
 utilities\ExcelReader.class
 rough\TestProperties.class
 utilities\TestUtil.class

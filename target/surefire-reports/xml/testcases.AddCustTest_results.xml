@@ -3,11 +3,13 @@
            tests="1"
            failures="0"
            errors="0"
-           skipped="0"
-           time="8.143">
+           skipped="1"
+           time="0.000">
   <properties />
   
+            <testcase name="addcustomer" time="0.0" classname="testcases.AddCustTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="addcustomer" time="8.143" classname="testcases.AddCustTest" />
-      
+  
 </testsuite>
