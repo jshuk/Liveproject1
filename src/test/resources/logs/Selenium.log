@@ -1,7 +1,12 @@
-22:15:43,490 DEBUG devpinoyLogger:58 - loaded
-22:17:26,849 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-22:17:27,023 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-22:17:27,028 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-22:17:27,032 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-22:17:27,034 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/star/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-22:17:34,504 DEBUG devpinoyLogger:107 - complete
+07:02:00,582 DEBUG devpinoyLogger:58 - loaded
+07:03:54,968 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+07:03:55,141 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+07:03:55,144 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+07:03:55,146 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+07:03:55,146 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/star/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+07:04:14,268 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+07:04:14,269 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+07:04:14,269 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+07:04:14,269 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+07:04:14,270 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/star/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+07:04:17,474 DEBUG devpinoyLogger:107 - complete

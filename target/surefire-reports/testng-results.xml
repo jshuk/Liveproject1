@@ -5,12 +5,12 @@
       <![CDATA[fist test pass]]>
     </line>
   </reporter-output>
-  <suite name="Data Driven" duration-ms="25829" started-at="2018-05-08T16:47:05Z" finished-at="2018-05-08T16:47:31Z">
+  <suite name="Data Driven" duration-ms="5583" started-at="2018-05-15T00:15:15Z" finished-at="2018-05-15T00:15:20Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="25250" started-at="2018-05-08T16:47:05Z" finished-at="2018-05-08T16:47:30Z">
+    <test name="LoginTest" duration-ms="4095" started-at="2018-05-15T00:15:15Z" finished-at="2018-05-15T00:15:19Z">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="loginasBanker()[pri:0, instance:testcases.LoginTest@139982de]" name="loginasBanker" duration-ms="20469" started-at="2018-05-08T22:17:05Z" finished-at="2018-05-08T22:17:26Z">
+        <test-method status="PASS" signature="loginasBanker()[pri:0, instance:testcases.LoginTest@139982de]" name="loginasBanker" duration-ms="1827" started-at="2018-05-15T05:45:15Z" finished-at="2018-05-15T05:45:17Z">
           <reporter-output>
             <line>
               <![CDATA[fist test pass]]>
@@ -19,13 +19,13 @@
         </test-method> <!-- loginasBanker -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- LoginTest -->
-    <test name="AddCust" duration-ms="15" started-at="2018-05-08T16:47:31Z" finished-at="2018-05-08T16:47:31Z">
+    <test name="AddCust" duration-ms="12" started-at="2018-05-15T00:15:20Z" finished-at="2018-05-15T00:15:20Z">
       <class name="testcases.AddCustTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="setUp" is-config="true" duration-ms="82165" started-at="2018-05-08T22:15:43Z" finished-at="2018-05-08T22:17:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="setUp" is-config="true" duration-ms="60245" started-at="2018-05-15T05:44:15Z" finished-at="2018-05-15T05:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="addcustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="addcustomer" duration-ms="0" started-at="2018-05-08T22:17:31Z" data-provider="dp" finished-at="2018-05-08T22:17:31Z">
+        <test-method status="SKIP" signature="addcustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="addcustomer" duration-ms="0" started-at="2018-05-15T05:45:20Z" data-provider="dp" finished-at="2018-05-15T05:45:20Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[Can't invoke method public java.lang.Object[][] utilities.TestUtil.getData(java.lang.reflect.Method) on this instance of class testcases.AddCustTest due to class mismatch]]>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="tearDown" is-config="true" duration-ms="2782" started-at="2018-05-08T22:17:31Z" finished-at="2018-05-08T22:17:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustTest@6ed3ccb2]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-05-15T05:45:20Z" finished-at="2018-05-15T05:45:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

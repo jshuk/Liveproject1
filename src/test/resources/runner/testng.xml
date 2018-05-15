@@ -11,15 +11,9 @@
     <classes>
     
       <class name="testcases.LoginTest"/>
-      
+      <class name="testcases.AddCustTest"/>
     </classes>
   </test> <!-- Test -->
   
-  <test name="AddCust">
-    <classes>
-    
-      <class name="testcases.AddCustTest"/>
-      
-    </classes>
-  </test>
+  
 </suite> <!-- Suite -->
